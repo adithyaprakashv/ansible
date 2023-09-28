@@ -1,8 +1,8 @@
 - name: variables from tasks
   hosts: localost
   vars:
-  -money: "50000"
-   land: "100 sqft"
+  - money: "50000"
+    land: "100 sqft"
   tasks:
   - name: inherit the value from play
     ansible.builtin.debug:
