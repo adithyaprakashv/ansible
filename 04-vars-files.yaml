@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost #managing the ansible server itself
+  vars_files:
+  - variables.yaml 
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "we are starting business {{NAME}}, Investment is: {{INVESTMENT}}, Ceo is: {{CEO}}"
