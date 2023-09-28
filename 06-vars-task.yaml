@@ -1,5 +1,5 @@
 - name: variables from tasks
-  hosts: localost
+  hosts: localhost
   vars:
   - money: "50000"
     land: "100 sqft"
